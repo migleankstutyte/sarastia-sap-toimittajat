@@ -1,0 +1,24 @@
+camel:
+  springboot:
+    main-run-controller: true # run until ctrl-c
+    jmx-enabled: true
+    name: "default"
+    shutdown-timeout: 30
+    stream-caching-enabled: false
+    use-mdc-logging: true
+  component:
+    servlet:
+      mapping:
+        context-path: /api/*
+spring:
+  main:
+    banner-mode: "off"
+management:
+  security:
+    enabled: false
+  health:
+    defaults:
+      enabled: false
+    camel:
+      enabled: true
+dollar: $

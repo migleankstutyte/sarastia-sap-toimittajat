@@ -1,0 +1,7 @@
+/config
+/routes.tmp
+/.idea
+/target/
+.settings/
+.project
+.classpath
