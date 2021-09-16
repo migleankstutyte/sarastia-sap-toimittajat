@@ -35,7 +35,7 @@ resources:
   - repository: sarastia-sap-toimittajat-pipelines
     type: git
     # Azure DevOps project/repository
-    name: ssarastia-sap-toimittajat/sarastia-sap-toimittajat-pipelines
+    name: sarastia-sap-toimittajat/sarastia-sap-toimittajat-pipelines
 
 extends:
   # Filename in Azure DevOps Repository (note possible -ui or -api)
