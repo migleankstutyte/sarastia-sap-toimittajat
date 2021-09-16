@@ -32,16 +32,16 @@ parameters:
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: sarastia-sap-toimittajat-pipelines
+  - repository: sarastia-sap-integration-pipelines
     type: git
     # Azure DevOps project/repository
-    name: sarastia-sap-toimittajat/sarastia-sap-toimittajat-pipelines
+    name: sarastia-sap-integration/sarastia-sap-integration-pipelines
 
 extends:
   # Filename in Azure DevOps Repository (note possible -ui or -api)
   # Django example: azure-pipelines-PROJECTNAME-api-master.yml
   # Drupal example: azure-pipelines-drupal-master.yml
-  template: azure-pipelines-sarastia-sap-toimittajat-devtest.yml@sarastia-sap-toimittajat-pipelines
+  template: azure-pipelines-sarastia-sap-toimittajat-devtest.yml@sarastia-sap-integration-pipelines
   # Image tag name for Fuse projects
   parameters:
     imagetag: ${{ parameters.imagetag }}
